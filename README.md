@@ -13,4 +13,4 @@ The current version includes the following blocks.
 
 ## License
 
-This mod is licensed under the [MIT License](). All models were made in BlockBench.
+This mod is licensed under the [MIT License](https://github.com/SamTheGamer39/MinecraftRailroadBlocksFabric/blob/master/LICENSE). All models were made in BlockBench.
