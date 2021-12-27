@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "railroadblockaddon",
+  "version": "${version}",
+
+  "name": "Railroad Blocks",
+  "description": "This mod adds railroad-related blocks to Minecraft!",
+  "authors": [
+    "SamTheGamer39"
+  ],
+  "contact": {
+    "homepage": "https://github.com/SamTheGamer39/MinecraftRailroadBlocksFabric",
+    "sources": "https://github.com/SamTheGamer39/MinecraftRailroadBlocksFabric"
+  },
+
+  "license": "MIT",
+  "icon": "assets/railroadblocksaddon/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.samthegamer39.railroadblocks.RailroadBlocks"
+    ]
+  },
+  "mixins": [
+    "railroadblocksaddon.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
