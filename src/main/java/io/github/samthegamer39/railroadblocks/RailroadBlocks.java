@@ -1,14 +1,14 @@
 package io.github.samthegamer39.railroadblocks;
 
 import net.fabricmc.api.ModInitializer;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static io.github.samthegamer39.railroadblocks.init.BlockInit.RegisterBlocks;
 import static io.github.samthegamer39.railroadblocks.init.ItemInit.RegisterItems;
 
 public class RailroadBlocks implements ModInitializer {
-	public static final Logger LOGGER = LogManager.getLogger("railroadblockaddon");
+	public static final Logger LOGGER = LoggerFactory.getLogger("railroadblockaddon");
 
 	@Override
 	public void onInitialize() {

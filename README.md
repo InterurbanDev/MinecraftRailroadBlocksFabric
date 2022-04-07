@@ -11,6 +11,8 @@ The current version includes the following blocks.
 * Iron Pole
 * Railroad Crossing Advance Warning Sign
 
+Please note this is a beta version of this mod. Not all features/blocks have been added yet.
+
 ## License
 
 This mod is licensed under the [MIT License](https://github.com/SamTheGamer39/MinecraftRailroadBlocksFabric/blob/master/LICENSE). All models were made in BlockBench.
