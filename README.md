@@ -2,7 +2,7 @@
 
 ## Description
 
-This mod addons various railroad-themed blocks to Minecraft.
+This mod adds various railroad-themed blocks to Minecraft.
 The current version includes the following blocks.
 
 * Wooden Crossbuck
