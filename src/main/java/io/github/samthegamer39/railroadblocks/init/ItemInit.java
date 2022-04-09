@@ -1,5 +1,6 @@
 package io.github.samthegamer39.railroadblocks.init;
 
+import io.github.samthegamer39.railroadblocks.RailroadBlocks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -11,20 +12,25 @@ import static io.github.samthegamer39.railroadblocks.init.BlockInit.*;
 
 public class ItemInit {
 
-    public static final Item WOODEN_CROSSBUCK_ITEM =
-            new BlockItem(WOODEN_CROSSBUCK_BLOCK, new FabricItemSettings().group(ItemGroup.TRANSPORTATION));
-
-    public static final Item IRON_CROSSBUCK_ITEM =
-            new BlockItem(IRON_CROSSBUCK_BLOCK, new FabricItemSettings().group(ItemGroup.TRANSPORTATION));
-
-    public static final Item RXR_ADVANCE_SIGN_ITEM =
-            new BlockItem(RXR_ADVANCE_SIGN_BLOCK, new FabricItemSettings().group(ItemGroup.TRANSPORTATION));
-
     public static final Item WOODEN_POLE_ITEM =
-            new BlockItem(WOODEN_POLE_BLOCK, new FabricItemSettings().group(ItemGroup.TRANSPORTATION));
+            new BlockItem(WOODEN_POLE_BLOCK, new FabricItemSettings()
+                    .group(RailroadBlocks.RAILROAD_BLOCKS));
 
     public static final Item IRON_POLE_ITEM =
-            new BlockItem(IRON_POLE_BLOCK, new FabricItemSettings().group(ItemGroup.TRANSPORTATION));
+            new BlockItem(IRON_POLE_BLOCK, new FabricItemSettings()
+                    .group(RailroadBlocks.RAILROAD_BLOCKS));
+
+    public static final Item WOODEN_CROSSBUCK_ITEM =
+            new BlockItem(WOODEN_CROSSBUCK_BLOCK, new FabricItemSettings()
+                    .group(RailroadBlocks.RAILROAD_BLOCKS));
+
+    public static final Item IRON_CROSSBUCK_ITEM =
+            new BlockItem(IRON_CROSSBUCK_BLOCK, new FabricItemSettings()
+                    .group(RailroadBlocks.RAILROAD_BLOCKS));
+
+    public static final Item RXR_ADVANCE_SIGN_ITEM =
+            new BlockItem(RXR_ADVANCE_SIGN_BLOCK, new FabricItemSettings()
+                    .group(RailroadBlocks.RAILROAD_BLOCKS));
 
     public static void RegisterItems() {
         Registry.register(Registry.ITEM, new Identifier("railroadblocksaddon", "wooden_crossbuck"), WOODEN_CROSSBUCK_ITEM);
