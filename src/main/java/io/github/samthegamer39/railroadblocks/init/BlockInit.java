@@ -2,6 +2,7 @@ package io.github.samthegamer39.railroadblocks.init;
 
 import io.github.samthegamer39.railroadblocks.common.blocks.PoleBlock;
 import io.github.samthegamer39.railroadblocks.common.blocks.SignBlock;
+import io.github.samthegamer39.railroadblocks.common.blocks.SmallSignBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Material;
 import net.minecraft.item.AxeItem;
@@ -37,12 +38,18 @@ public class BlockInit {
             .sounds(BlockSoundGroup.METAL)
     );
 
+    public static final SmallSignBlock WHISTLE_SIGN_BLOCK = new SmallSignBlock(FabricBlockSettings.of(Material.METAL)
+            .strength(2)
+            .sounds(BlockSoundGroup.METAL)
+    );
+
     public static void RegisterBlocks() {
         Registry.register(Registry.BLOCK, new Identifier("railroadblocksaddon", "wooden_crossbuck"), WOODEN_CROSSBUCK_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier("railroadblocksaddon", "iron_crossbuck"), IRON_CROSSBUCK_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier("railroadblocksaddon", "rxr_advance_sign"), RXR_ADVANCE_SIGN_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier("railroadblocksaddon", "wooden_pole"), WOODEN_POLE_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier("railroadblocksaddon", "iron_pole"), IRON_POLE_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier("railroadblocksaddon", "whistle_sign"), WHISTLE_SIGN_BLOCK);
     }
 
 }
