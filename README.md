@@ -3,15 +3,21 @@
 ## Description
 
 This mod adds various railroad-themed blocks to Minecraft.
-The current version includes the following blocks.
+The current version includes the following blocks:
 
-* Wooden Crossbuck
-* Wooden Pole
 * Iron Crossbuck
 * Iron Pole
 * Railroad Crossing Advance Warning Sign
+* Wooden Crossbuck
+* Wooden Pole
 
-Please note this is a beta version of this mod. Not all features/blocks have been added yet.
+And the following items:
+
+* Green Flag
+* Yellow Flag
+* Red Flag
+
+Please note this is an early version of this mod. Not all features/blocks have been added yet.
 
 ## License
 
