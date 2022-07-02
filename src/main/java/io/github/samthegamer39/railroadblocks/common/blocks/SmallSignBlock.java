@@ -50,8 +50,8 @@ public class SmallSignBlock extends HorizontalFacingBlock implements Waterloggab
                 .with(WATERLOGGED, context.getWorld().getFluidState(context.getBlockPos()).getFluid() == Fluids.WATER); //Sets waterlogged state based on the presence of water.
     }
 
-    @SuppressWarnings("deprecation") //Why is getFluidState() deprecated? Is there a better alternative?
-    @Override
+    @SuppressWarnings("deprecation")
+    @Override//Why is getFluidState() deprecated? Is there a better alternative?
     public FluidState getFluidState(BlockState state) {
         return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state); //Displays water when waterlogged.
     }

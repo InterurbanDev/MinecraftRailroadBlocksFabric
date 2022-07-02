@@ -11,6 +11,10 @@ import static io.github.samthegamer39.railroadblocks.init.BlockInit.*;
 
 public class ItemInit {
 
+    public static final Item FLAG_BLUE =
+            new Item(new FabricItemSettings()
+                    .group(RailroadBlocks.RAILROAD_BLOCKS));
+
     public static final Item FLAG_GREEN =
             new Item(new FabricItemSettings()
                     .group(RailroadBlocks.RAILROAD_BLOCKS));
@@ -48,6 +52,7 @@ public class ItemInit {
                     .group(RailroadBlocks.RAILROAD_BLOCKS));
 
     public static void RegisterItems() {
+        Registry.register(Registry.ITEM, new Identifier("railroadblocksaddon", "flag_blue"), FLAG_BLUE);
         Registry.register(Registry.ITEM, new Identifier("railroadblocksaddon", "flag_green"), FLAG_GREEN);
         Registry.register(Registry.ITEM, new Identifier("railroadblocksaddon", "flag_red"), FLAG_RED);
         Registry.register(Registry.ITEM, new Identifier("railroadblocksaddon", "flag_yellow"), FLAG_YELLOW);
