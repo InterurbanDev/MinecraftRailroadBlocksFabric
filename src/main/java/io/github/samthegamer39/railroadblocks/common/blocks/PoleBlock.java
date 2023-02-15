@@ -19,7 +19,7 @@ import net.minecraft.world.WorldAccess;
 
 public class PoleBlock extends Block implements Waterloggable {
 
-    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
+    private static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
     public PoleBlock(Settings settings) {
         super(settings);
@@ -27,7 +27,7 @@ public class PoleBlock extends Block implements Waterloggable {
                 .with(WATERLOGGED, false));
     }
 
-    @SuppressWarnings("deprecation") //Why is getOutlineShape()? deprecated? Is there a better alternative?
+    @SuppressWarnings("deprecation") // Why is getOutlineShape()? deprecated? Is there a better alternative?
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
         return VoxelShapes.cuboid(0.4375, 0.0, 0.4375, 0.5625, 1.0, 0.5625);
@@ -44,19 +44,18 @@ public class PoleBlock extends Block implements Waterloggable {
                 .with(WATERLOGGED, context.getWorld().getFluidState(context.getBlockPos()).getFluid() == Fluids.WATER);
     }
 
-    @SuppressWarnings("deprecation") //Why is getFluidState() deprecated? Is there a better alternative?
+    @SuppressWarnings("deprecation") // Why is getFluidState() deprecated? Is there a better alternative?
     @Override
     public FluidState getFluidState(BlockState state) {
         return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state);
     }
 
-    @SuppressWarnings("deprecation") //Why is getStateForNeighborUpdate deprecated? Is there a better alternative?
+    @SuppressWarnings("deprecation") // Why is getStateForNeighborUpdate deprecated? Is there a better alternative?
     @Override
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos position, BlockPos neighborPos) {
         if (state.get(WATERLOGGED)) {
-            //1.18+ Versions
-            world.createAndScheduleFluidTick(position, Fluids.WATER, Fluids.WATER.getTickRate(world));
-            //1.17 and Older Versions
+            world.scheduleFluidTick(position, Fluids.WATER, Fluids.WATER.getTickRate(world));
+            // 1.17 and Older Versions
             //world.getFluidTickScheduler().schedule(position, Fluids.WATER, Fluids.WATER.getTickRate(world));
         }
 
