@@ -35,5 +35,6 @@ public class RailroadBlocks implements ModInitializer {
 
 		RegisterBlocks();
 		RegisterItems();
+		LOGGER.info("Railroad Blocks successfully loaded.");
 	}
 }
