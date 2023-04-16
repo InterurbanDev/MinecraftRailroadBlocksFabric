@@ -49,7 +49,7 @@ public class BlockInit {
      * Registers blocks with Minecraft.
      */
     public static void RegisterBlocks() {
-        // Registry.register(Registries.BLOCK, new Identifier("railroadblocksaddon", "test_block"), TEST_BLOCK); // For debugging purposes only.
+        Registry.register(Registries.BLOCK, new Identifier("railroadblocksaddon", "test_block"), TEST_BLOCK); // For debugging purposes only.
         Registry.register(Registries.BLOCK, new Identifier("railroadblocksaddon", "iron_crossbuck"), IRON_CROSSBUCK_BLOCK);
         Registry.register(Registries.BLOCK, new Identifier("railroadblocksaddon", "iron_pole"), IRON_POLE_BLOCK);
         Registry.register(Registries.BLOCK, new Identifier("railroadblocksaddon", "rxr_advance_sign"), RXR_ADVANCE_SIGN_BLOCK);

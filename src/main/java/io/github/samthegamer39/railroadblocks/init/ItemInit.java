@@ -54,7 +54,7 @@ public class ItemInit {
      * Registers items with Minecraft.
      */
     public static void RegisterItems() {
-        //Registry.register(Registries.ITEM, new Identifier("railroadblocksaddon", "test_block"), TEST_BLOCK_ITEM); // For debugging purposes only.
+        Registry.register(Registries.ITEM, new Identifier("railroadblocksaddon", "test_block"), TEST_BLOCK_ITEM); // For debugging purposes only.
         Registry.register(Registries.ITEM, new Identifier("railroadblocksaddon", "flag_blue"), FLAG_BLUE);
         Registry.register(Registries.ITEM, new Identifier("railroadblocksaddon", "flag_green"), FLAG_GREEN);
         Registry.register(Registries.ITEM, new Identifier("railroadblocksaddon", "flag_red"), FLAG_RED);
@@ -67,7 +67,7 @@ public class ItemInit {
         Registry.register(Registries.ITEM, new Identifier("railroadblocksaddon", "wooden_pole"), WOODEN_POLE_ITEM);
 
         ItemGroupEvents.modifyEntriesEvent(RAILROAD_BLOCKS).register(content -> {
-            //content.add(TEST_BLOCK_ITEM); // For debugging purposes only.
+            content.add(TEST_BLOCK_ITEM); // For debugging purposes only.
             content.add(FLAG_BLUE);
             content.add(FLAG_GREEN);
             content.add(FLAG_RED);
