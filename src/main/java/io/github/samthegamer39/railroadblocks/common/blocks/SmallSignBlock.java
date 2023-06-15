@@ -46,7 +46,7 @@ public class SmallSignBlock extends HorizontalFacingBlock implements Waterloggab
     @Override
     public BlockState getPlacementState(ItemPlacementContext context) {
         return this.getDefaultState()
-                .with(Properties.HORIZONTAL_FACING, context.getPlayerFacing().getOpposite())
+                .with(Properties.HORIZONTAL_FACING, context.getPlayerLookDirection().getOpposite())
                 .with(WATERLOGGED, context.getWorld().getFluidState(context.getBlockPos()).getFluid() == Fluids.WATER); //Sets waterlogged state based on the presence of water.
     }
 

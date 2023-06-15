@@ -61,7 +61,7 @@ public class SignBlock extends HorizontalFacingBlock implements Waterloggable {
      * @param view BlockView
      * @param pos Current position
      * @param context ShapeContext
-     * @return
+     * @return Direction
      */
     @SuppressWarnings("deprecation") // Why is getOutlineShape()? deprecated? Is there a better alternative?
     @Override
@@ -84,7 +84,7 @@ public class SignBlock extends HorizontalFacingBlock implements Waterloggable {
     @Override
     public BlockState getPlacementState(ItemPlacementContext context) {
         return this.getDefaultState()
-                .with(HORIZONTAL_FACING, context.getPlayerFacing().getOpposite())
+                .with(HORIZONTAL_FACING, context.getPlayerLookDirection().getOpposite())
                 .with(WATERLOGGED, context.getWorld().getFluidState(context.getBlockPos()).getFluid() == Fluids.WATER); //Sets waterlogged state based on the presence of water.
     }
 

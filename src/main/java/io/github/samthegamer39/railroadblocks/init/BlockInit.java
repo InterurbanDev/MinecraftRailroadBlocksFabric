@@ -4,8 +4,8 @@ import io.github.samthegamer39.railroadblocks.common.blocks.PoleBlock;
 import io.github.samthegamer39.railroadblocks.common.blocks.SignBlock;
 import io.github.samthegamer39.railroadblocks.common.blocks.SmallSignBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Material;
 import net.minecraft.registry.Registries;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
 
@@ -13,29 +13,30 @@ import net.minecraft.registry.Registry;
  * A list of all mod blocks and stores them for registry with Minecraft.
  */
 public class BlockInit {
-
     // Block List
-    public static final SignBlock IRON_CROSSBUCK_BLOCK = new SignBlock(FabricBlockSettings.of(Material.METAL)
+    public static final SignBlock IRON_CROSSBUCK_BLOCK = new SignBlock(FabricBlockSettings.create()
+            .sounds(BlockSoundGroup.METAL)
             .strength(2f)
     );
 
-    public static final PoleBlock IRON_POLE_BLOCK = new PoleBlock(FabricBlockSettings.of(Material.METAL)
+    public static final PoleBlock IRON_POLE_BLOCK = new PoleBlock(FabricBlockSettings.create()
+            .sounds(BlockSoundGroup.METAL)
             .strength(2f)
     );
 
-    public static final SignBlock RXR_ADVANCE_SIGN_BLOCK = new SignBlock(FabricBlockSettings.of(Material.METAL)
+    public static final SignBlock RXR_ADVANCE_SIGN_BLOCK = new SignBlock(FabricBlockSettings.create()
             .strength(2f)
     );
 
-    public static final SmallSignBlock WHISTLE_SIGN_BLOCK = new SmallSignBlock(FabricBlockSettings.of(Material.METAL)
+    public static final SmallSignBlock WHISTLE_SIGN_BLOCK = new SmallSignBlock(FabricBlockSettings.create()
             .strength(2f)
     );
 
-    public static final SignBlock WOODEN_CROSSBUCK_BLOCK = new SignBlock(FabricBlockSettings.of(Material.WOOD)
+    public static final SignBlock WOODEN_CROSSBUCK_BLOCK = new SignBlock(FabricBlockSettings.create()
             .strength(1f)
     );
 
-    public static final PoleBlock WOODEN_POLE_BLOCK = new PoleBlock(FabricBlockSettings.of(Material.WOOD)
+    public static final PoleBlock WOODEN_POLE_BLOCK = new PoleBlock(FabricBlockSettings.create()
             .strength(1f)
     );
 

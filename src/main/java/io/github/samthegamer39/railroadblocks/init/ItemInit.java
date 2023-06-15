@@ -1,7 +1,6 @@
 package io.github.samthegamer39.railroadblocks.init;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -62,7 +61,8 @@ public class ItemInit {
         Registry.register(Registries.ITEM, new Identifier("railroadblocksaddon", "wooden_crossbuck"), WOODEN_CROSSBUCK_ITEM);
         Registry.register(Registries.ITEM, new Identifier("railroadblocksaddon", "wooden_pole"), WOODEN_POLE_ITEM);
 
-        ItemGroupEvents.modifyEntriesEvent(RAILROAD_BLOCKS).register(content -> {
+        /*
+        ItemGroupEvents.modifyEntriesEvent(RegistryKey.ofRegistry()).register(content -> {
             content.add(FLAG_BLUE);
             content.add(FLAG_GREEN);
             content.add(FLAG_RED);
@@ -74,6 +74,7 @@ public class ItemInit {
             content.add(WOODEN_CROSSBUCK_ITEM);
             content.add(WOODEN_POLE_ITEM);
         });
+         */
     }
 
 }
