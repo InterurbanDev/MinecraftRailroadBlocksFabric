@@ -7,7 +7,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
 
-import static io.github.samthegamer39.railroadblocks.RailroadBlocks.RAILROAD_BLOCKS;
 import static io.github.samthegamer39.railroadblocks.init.BlockInit.*;
 
 /**
@@ -60,21 +59,6 @@ public class ItemInit {
         Registry.register(Registries.ITEM, new Identifier("railroadblocksaddon", "whistle_sign"), WHISTLE_SIGN_ITEM);
         Registry.register(Registries.ITEM, new Identifier("railroadblocksaddon", "wooden_crossbuck"), WOODEN_CROSSBUCK_ITEM);
         Registry.register(Registries.ITEM, new Identifier("railroadblocksaddon", "wooden_pole"), WOODEN_POLE_ITEM);
-
-        /*
-        ItemGroupEvents.modifyEntriesEvent(RegistryKey.ofRegistry()).register(content -> {
-            content.add(FLAG_BLUE);
-            content.add(FLAG_GREEN);
-            content.add(FLAG_RED);
-            content.add(FLAG_YELLOW);
-            content.add(IRON_CROSSBUCK_ITEM);
-            content.add(IRON_POLE_ITEM);
-            content.add(RXR_ADVANCE_SIGN_ITEM);
-            content.add(WHISTLE_SIGN_ITEM);
-            content.add(WOODEN_CROSSBUCK_ITEM);
-            content.add(WOODEN_POLE_ITEM);
-        });
-         */
     }
 
 }
