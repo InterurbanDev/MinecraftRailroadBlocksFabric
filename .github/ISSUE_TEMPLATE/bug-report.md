@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-***BEFORE POSTING: If you are using the Forge version of this mod, you MUST post your issue [here](https://github.com/SamTheGamer39/MinecraftRailroadBlocks/issues).***
+***BEFORE POSTING: If you are using the Forge or NeoForge version of this mod, you MUST post your issue [here](https://github.com/SamTheGamer39/MinecraftRailroadBlocks/issues).***
 
 **Describe the bug**
 A clear and concise description of what the bug is.
