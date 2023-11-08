@@ -22,4 +22,9 @@ Please note this is an early version of this mod. Not all features/blocks have b
 
 ## License
 
-This mod is licensed under the [MIT License](https://github.com/SamTheGamer39/MinecraftRailroadBlocksFabric/blob/master/LICENSE). All models were made in BlockBench.
+This mod is licensed under the [MIT License](https://github.com/SamTheGamer39/MinecraftRailroadBlocksFabric/blob/master/LICENSE).
+
+## Credits
+All models were made in BlockBench.
+
+zh_cn translation by [lonelyicer](https://github.com/lonelyicer).
