@@ -1,5 +1,8 @@
 # Railroad Blocks
 
+**This repository is being retired soon. Fabric development is being continued from the [MinecraftRailroadBlocks repository](https://github.com/SamTheGamer39/MinecraftRailroadBlocks).**
+Please change all links to point to the new repository instead, no further work will be done on this repository.
+
 ## Description
 
 This mod adds various railroad-themed blocks to Minecraft.
