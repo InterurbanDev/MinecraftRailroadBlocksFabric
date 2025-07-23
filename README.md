@@ -1,31 +1,12 @@
-# Railroad Blocks
+# Railroad Blocks Fabric [OLD]
 
-**This repository is being retired soon. Fabric development is being continued from the [MinecraftRailroadBlocks repository](https://github.com/SamTheGamer39/MinecraftRailroadBlocks).**
-Please change all links to point to the new repository instead, no further work will be done on this repository.
+**This repository has been retired. Fabric development is being continued from the main [MinecraftRailroadBlocks](https://github.com/InterurbanDev/MinecraftRailroadBlocks) repository.**
 
-## Description
-
-This mod adds various railroad-themed blocks to Minecraft.
-The current version includes the following blocks:
-
-* Iron Crossbuck
-* Iron Pole
-* Railroad Crossing Advance Warning Sign
-* Wooden Crossbuck
-* Wooden Pole
-
-And the following items:
-
-* Green Flag
-* Yellow Flag
-* Red Flag
-* Blue Flag
-
-Please note this is an early version of this mod. Not all features/blocks have been added yet.
+Please change any old links to this repository to point to the new repository instead, as no further work will be done on this repository.
 
 ## License
 
-This mod is licensed under the [MIT License](https://github.com/SamTheGamer39/MinecraftRailroadBlocksFabric/blob/master/LICENSE).
+This mod is licensed under the [MIT License](https://github.com/InterurbanDev/MinecraftRailroadBlocksFabric/blob/master/LICENSE).
 
 ## Credits
 All models were made in BlockBench.
